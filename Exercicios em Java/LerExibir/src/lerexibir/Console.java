@@ -9,20 +9,21 @@ public class Console {
     public static String ler(Object mensagem){
         System.out.print(mensagem);
         String resposta = leitura.nextLine();
-        System.out.print("");
+        System.out.print(""); //resolve o bug de pular linha
         return resposta;
-      }//ler
+    }//ler
     
     public static double lerDouble(Object mensagem){
-            return Double.parseDouble(ler(mensagem));
-        }//lerDouble
-        
+        return Double.parseDouble(ler(mensagem));        
+    }//lerDouble
+    
     public static int lerInt(Object mensagem){
-            return Integer.parseInt(ler(mensagem));
-        }//lerInt
-        
+        return Integer.parseInt(ler(mensagem));        
+    }//lerInt
+    
     public static void exibir(Object mensagem){
-           System.out.println(mensagem);
-       }//exibir
+        System.out.println(mensagem);
+    }//exibir
+    
     
 }
